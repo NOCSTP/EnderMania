@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "end_stone_shard",
+  "ingredient": {
+    "item": "endermania:end_stone_shard"
+  },
+  "result": "endermania:end_smelled_stone_shard"
+}
