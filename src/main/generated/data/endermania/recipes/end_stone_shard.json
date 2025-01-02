@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "endermania:end_rubbble"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "endermania:end_stone_shard"
+  }
+}

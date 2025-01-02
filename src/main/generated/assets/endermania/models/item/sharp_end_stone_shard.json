@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "endermania:item/sharp_end_stone_shard"
+  }
+}
