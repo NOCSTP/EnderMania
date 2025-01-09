@@ -36,7 +36,7 @@ public class EnderShardMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.ENDER_DUST, ModItems.SHARP_END_STONE_SHARD);
+        return null;
     }
 
 
