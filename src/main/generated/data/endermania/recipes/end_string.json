@@ -2,18 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": [],
     "S": {
       "item": "endermania:end_fiber"
     }
   },
   "pattern": [
-    "AAS",
-    "ASA",
-    "SAA"
+    "  S",
+    " S ",
+    "S  "
   ],
   "result": {
-    "item": "endermania:end_fiber"
+    "item": "endermania:end_string"
   },
   "show_notification": true
 }

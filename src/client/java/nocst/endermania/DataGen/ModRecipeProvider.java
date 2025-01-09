@@ -6,6 +6,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import nocst.endermania.Items.ModItems;
@@ -31,14 +32,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.END_SMELLED_SHARD, RecipeCategory.DECORATIONS, ModBlocks.End_STONE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.END_STONE_SHARD, RecipeCategory.DECORATIONS, ModBlocks.END_RUBBLE);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.END_FIBER, 1)
-                .pattern("AAS")
-                .pattern("ASA")
-                .pattern("SAA")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.END_STRING, 1)
+                .pattern("  S")
+                .pattern(" S ")
+                .pattern("S  ")
                 .input('S', ModItems.END_FIBER)
-                .input('A', Items.AIR)
                 .criterion(hasItem(ModItems.END_FIBER), conditionsFromItem(ModItems.END_FIBER))
                 .criterion(hasItem(ModItems.END_STRING), conditionsFromItem(ModItems.END_STRING))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.END_STRING)));
+                    .offerTo(exporter, new Identifier(getRecipeName(ModItems.END_STRING)));
+
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems., 1)
+//                .pattern("  S")
+//                .pattern(" S ")
+//                .pattern("S  ")
+//                .input('S', ModItems.END_FIBER)
+//                .criterion(hasItem(ModItems.END_FIBER), conditionsFromItem(ModItems.END_FIBER))
+//                .criterion(hasItem(ModItems.END_STRING), conditionsFromItem(ModItems.END_STRING))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.END_STRING)));
+
     }
+
+
+
+
 }
