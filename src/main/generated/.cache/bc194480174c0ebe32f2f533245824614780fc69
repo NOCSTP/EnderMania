@@ -1,12 +1,16 @@
-// 1.20.1	2025-01-02T15:44:04.7103335	EnderMania/Model Definitions
+// 1.20.1	2025-01-09T19:38:58.5951524	EnderMania/Model Definitions
 9a08765e40fcdf7b7e73211860daa703f3113202 assets\endermania\models\item\end_string.json
 00d215f63550cffacac363296328aeab2f18c9c1 assets\endermania\models\item\end_fiber.json
+368df9080519ed8560433449ac883b3c21fc613d assets\endermania\models\item\ender_kebabs.json
 251a90dca4e777bad6697947ff557f151d0c4309 assets\endermania\blockstates\end_stone_block.json
 1e32c8e9c4b99e84bd9bf43e51228305f45e6e76 assets\endermania\models\item\sharp_end_stone_shard.json
-90856b31e230d2092a76832ffe908bebac9d169e assets\endermania\models\item\end_smelled_stone_shard.json
 63254c3c48ca726ce6f900d5a76214f5297c3ccc assets\endermania\models\item\end_stone_block.json
+90856b31e230d2092a76832ffe908bebac9d169e assets\endermania\models\item\end_smelled_stone_shard.json
 a61780df9743fd048c088f7025691712c09e9661 assets\endermania\blockstates\end_rubbble.json
-b505d49f7f01d8b5e1d306a5f2bfec648dfda110 assets\endermania\models\block\end_stone_block.json
-4dc9a4f05ee2dd8c49050d17f34bf4536280d510 assets\endermania\models\block\end_rubbble.json
 6cba18ef7c860d33732b7b05acf6dfea72621d51 assets\endermania\models\item\end_stone_shard.json
+4dc9a4f05ee2dd8c49050d17f34bf4536280d510 assets\endermania\models\block\end_rubbble.json
+a7b48187f182fb753041205b105fde97b7e14997 assets\endermania\models\item\observant_pickaxe.json
+094cb57bb93816be0e86fab9d84e808d2a92f63c assets\endermania\models\item\observant_sword.json
+11a4ed0cbc0ad417a4ec42b9d819d07a40638c9f assets\endermania\models\item\ender_dust.json
+b505d49f7f01d8b5e1d306a5f2bfec648dfda110 assets\endermania\models\block\end_stone_block.json
 39f2910b56c31e4bd3cc403f398796dbdd4b36ad assets\endermania\models\item\end_rubbble.json

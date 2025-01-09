@@ -26,5 +26,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.END_SMELLED_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_STRING, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_FIBER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDER_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDER_KEBABS, Models.GENERATED);
+
+
+        //Model of sword
+        itemModelGenerator.register(ModItems.OBSERVANT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBSERVANT_PICKAXE, Models.HANDHELD);
     }
+
 }
