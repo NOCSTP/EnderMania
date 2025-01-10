@@ -12,6 +12,7 @@ import nocst.endermania.Items.custom.TieredItem;
 public class ModItems {
 
     public static final Item END_STONE_SHARD = registrItem("end_stone_shard", new Item(new FabricItemSettings()));
+    public static final Item NEVEBUMBA = registrItem("nevebumba", new Item(new FabricItemSettings()));
     public static final Item END_FIBER = registrItem("end_fiber", new Item(new FabricItemSettings()));
     public static final Item END_STRING = registrItem("end_string", new Item(new FabricItemSettings()));
     public static final Item END_SMELLED_SHARD = registrItem("end_smelled_stone_shard", new Item( new FabricItemSettings()));

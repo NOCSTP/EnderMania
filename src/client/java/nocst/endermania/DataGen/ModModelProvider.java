@@ -17,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.End_STONE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_RUBBLE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEPANA_BLOCK);
     }
 
     @Override
@@ -28,6 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.END_FIBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_KEBABS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEVEBUMBA, Models.GENERATED);
 
 
         //Model of sword

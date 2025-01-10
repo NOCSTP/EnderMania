@@ -2,12 +2,12 @@ package nocst.endermania;
 
 import net.fabricmc.api.ModInitializer;
 
+import nocst.endermania.Customs.LootTableReplayser;
 import nocst.endermania.Items.ModItems;
 import nocst.endermania.Items.ModItemsGroups;
 import nocst.endermania.block.ModBlocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 public class EnderMania implements ModInitializer {
 	public static final String MOD_ID = "endermania";
 
@@ -16,10 +16,17 @@ public class EnderMania implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
+
+
 	@Override
 	public void onInitialize() {
 
 		ModItemsGroups.registerItemGroups();
+
+
+
+		LootTableReplayser.register();
 
 		ModItems.registerModItem();
 		ModBlocks.registerModBlock();

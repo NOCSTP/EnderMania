@@ -20,6 +20,8 @@ public class ModBlocks {
     public static final Block End_STONE_BLOCK = registerBlock("end_stone_block",
             new Block(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
+    public static final Block STEPANA_BLOCK = registerBlock("stepoana_block",
+            new Block(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.BELL).strength(19F)));
 
 
 
