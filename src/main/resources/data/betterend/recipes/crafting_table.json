@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "table",
   "key": {
-    "S": {
-      "item": "endermania:end_fiber"
+    "#": {
+      "tag": "betterend:planks"
     }
   },
   "pattern": [
-    "  S",
-    " S ",
-    "S  "
+    "##",
+    "##"
   ],
   "result": {
-    "item": "endermania:end_string"
+    "item": "minecraft:crafting_table"
   },
   "show_notification": true
 }

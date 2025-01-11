@@ -21,7 +21,6 @@ public class ModItemsGroups {
                             entries.add(ModItems.END_STRING);
                             entries.add(ModItems.END_FIBER);
                             entries.add(ModItems.END_STONE_SHARD);
-                            entries.add(ModItems.ENDER_KEBABS);
                             entries.add(ModItems.ENDER_DUST);
                             entries.add(ModItems.OBSERVANT_SWORD);
                             entries.add(ModItems.OBSERVANT_PICKAXE);

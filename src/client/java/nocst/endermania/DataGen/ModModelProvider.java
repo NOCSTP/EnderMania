@@ -1,5 +1,6 @@
 package nocst.endermania.DataGen;
 
+import dev.architectury.platform.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -16,9 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.End_STONE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_RUBBLE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEPANA_BLOCK);
-    }
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_RUBBLE);}
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -28,13 +27,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.END_STRING, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_FIBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_DUST, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ENDER_KEBABS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.NEVEBUMBA, Models.GENERATED);
+
 
 
         //Model of sword
         itemModelGenerator.register(ModItems.OBSERVANT_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBSERVANT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBSERVANT_AXE, Models.HANDHELD);
     }
 
 }

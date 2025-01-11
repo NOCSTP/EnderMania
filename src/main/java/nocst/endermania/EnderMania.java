@@ -28,6 +28,7 @@ public class EnderMania implements ModInitializer {
 
 		LootTableReplayser.register();
 
+
 		ModItems.registerModItem();
 		ModBlocks.registerModBlock();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.

@@ -1,7 +1,9 @@
-// 1.20.1	2025-01-10T21:50:48.5523087	EnderMania/Recipes
+// 1.20.1	2025-01-11T19:29:12.344143	EnderMania/Recipes
 6b1a7154ffcf425dba94a1f8fe2d5fc76b255622 data\endermania\recipes\end_smelled_stone_shard_from_blasting_end_stone_shard.json
+fe2d361f4ef5436ab86c10b2cd88523b3cf65e94 data\endermania\recipes\observant_axe.json
 ccee4fe866f45f579af54c07e9aa38b7dbe6898a data\endermania\recipes\end_string.json
 0aecb63393a930f5b3b6f26a07f37fb096b16245 data\endermania\recipes\end_stone.json
+70f26d710e9421f018303dbe080efdef0a78b955 data\endermania\advancements\recipes\misc\observant_axe.json
 ce3ce423585388a349df389395d9502b9e40618b data\endermania\recipes\end_smelled_stone_shard.json
 9e3e440ce0d72607a997718d6fcf8a9e1fd1eed8 data\endermania\advancements\recipes\building_blocks\end_stone_shard.json
 a2473f2ec9715c5b195db59f5df72cf5ef1d2705 data\endermania\recipes\end_stone_shard.json

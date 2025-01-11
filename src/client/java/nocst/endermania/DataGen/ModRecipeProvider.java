@@ -43,6 +43,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                     .offerTo(exporter, new Identifier(getRecipeName(ModItems.END_STRING)));
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OBSERVANT_AXE, 1)
+                .pattern("FS")
+                .pattern("C ")
+                .input('F', ModItems.END_FIBER)
+                .input('S', ModItems.END_STONE_SHARD)
+                .input('C', Items.STICK)
+                .criterion(hasItem(ModItems.END_FIBER), conditionsFromItem(ModItems.END_FIBER))
+                .criterion(hasItem(ModItems.END_STONE_SHARD), conditionsFromItem(ModItems.END_STONE_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSERVANT_AXE)));
+
+
+
+
+
+
+
+
+
 
 //        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems., 1)
 //                .pattern("  S")
