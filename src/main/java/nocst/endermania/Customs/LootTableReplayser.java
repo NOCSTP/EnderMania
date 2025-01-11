@@ -7,6 +7,7 @@ import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 import nocst.endermania.Items.ModItems;
 
@@ -28,7 +29,7 @@ public class LootTableReplayser {
                         .rolls(ConstantLootNumberProvider.create(1)) // Один бросок
                         .conditionally(RandomChanceLootCondition.builder(1.0f)) // 100% шанс выпадения
                         .with(ItemEntry.builder(ModItems.END_STONE_SHARD)) // Предмет лута
-                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build()) // Количество
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3)).build()) // Количество
                         .build();
 
                 // Создаём новую таблицу лута

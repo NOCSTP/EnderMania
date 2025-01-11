@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_rubbble": {
+    "has_end_stone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "endermania:end_rubbble"
+              "minecraft:end_stone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_end_rubbble",
+      "has_end_stone",
       "has_the_recipe"
     ]
   ],

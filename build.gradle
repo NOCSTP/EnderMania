@@ -49,6 +49,7 @@ dependencies {
 		modImplementation "curse.maven:architectury-api-419699:5137936"
 	modImplementation "curse.maven:kubejs-238086:5853321"
 	modImplementation "curse.maven:rhino-416294:5655835"
+
 	modImplementation "curse.maven:mouse-tweaks-60089:5230279"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	// Fabric API. This is technically optional, but you probably want it anyway.

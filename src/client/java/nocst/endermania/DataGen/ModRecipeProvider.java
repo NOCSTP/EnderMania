@@ -2,6 +2,7 @@ package nocst.endermania.DataGen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -30,7 +31,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.END_SMELLED_SHARD, 0.7f, 100, "end_stone_shard");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.END_SMELLED_SHARD, RecipeCategory.DECORATIONS, ModBlocks.End_STONE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.END_STONE_SHARD, RecipeCategory.DECORATIONS, ModBlocks.END_RUBBLE);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.END_STONE_SHARD, RecipeCategory.DECORATIONS, Blocks.END_STONE);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.END_STRING, 1)
                 .pattern("  S")
@@ -40,6 +41,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.END_FIBER), conditionsFromItem(ModItems.END_FIBER))
                 .criterion(hasItem(ModItems.END_STRING), conditionsFromItem(ModItems.END_STRING))
                     .offerTo(exporter, new Identifier(getRecipeName(ModItems.END_STRING)));
+
+
 
 //        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems., 1)
 //                .pattern("  S")
