@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "endermania:observant_axe"
+    },
+    "C": {
+      "item": "endermania:end_string"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "WA",
+    "C "
+  ],
+  "result": {
+    "item": "minecraft:crafting_table"
+  },
+  "show_notification": true
+}

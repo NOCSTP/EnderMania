@@ -5,10 +5,13 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import nocst.endermania.Items.ModItems;
 import nocst.endermania.block.ModBlocks;
@@ -35,8 +38,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.END_STRING, 1)
                 .pattern("  S")
-                .pattern(" S ")
-                .pattern("S  ")
+                .pattern(" SS")
                 .input('S', ModItems.END_FIBER)
                 .criterion(hasItem(ModItems.END_FIBER), conditionsFromItem(ModItems.END_FIBER))
                 .criterion(hasItem(ModItems.END_STRING), conditionsFromItem(ModItems.END_STRING))
@@ -53,6 +55,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.END_STONE_SHARD), conditionsFromItem(ModItems.END_STONE_SHARD))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSERVANT_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CRAFTING_TABLE, 1)
+                .pattern("WA")
+                .pattern("C ")
+                .input('A', ModItems.OBSERVANT_AXE)
+                .input('W', ItemTags.PLANKS)
+                .input('C', ModItems.END_STRING)
+                .criterion(hasItem(ModItems.END_STRING), conditionsFromItem(ModItems.END_STRING))
+                .criterion(hasItem(ModItems.OBSERVANT_AXE), conditionsFromItem(ModItems.OBSERVANT_AXE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.CRAFTING_TABLE)));
 
 
 

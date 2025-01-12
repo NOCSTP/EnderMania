@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "table",
   "key": {
     "#": {
-      "tag": "betterend:planks"
+      "item": "endermania:end_stone_shard"
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "###",
+    "###",
+    "###"
   ],
   "result": {
-    "item": "minecraft:crafting_table"
+    "item": "minecraft:end_stone"
   },
   "show_notification": true
 }

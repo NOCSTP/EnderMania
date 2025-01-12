@@ -22,10 +22,23 @@ public class ModItemsGroups {
                             entries.add(ModItems.END_FIBER);
                             entries.add(ModItems.END_STONE_SHARD);
                             entries.add(ModItems.ENDER_DUST);
-                            entries.add(ModItems.OBSERVANT_SWORD);
-                            entries.add(ModItems.OBSERVANT_PICKAXE);
+
 
                     })).build());
+
+
+    public static final ItemGroup ENDERMANIA_TOOLS = Registry.register(Registries.ITEM_GROUP, new Identifier(EnderMania.MOD_ID, "endermaia_tools"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endermaia_tools"))
+                    .icon(() ->
+                            new ItemStack(ModItems.OBSERVANT_AXE)).entries(((displayContext, entries) -> {
+                        entries.add(ModItems.OBSERVANT_SWORD);
+                        entries.add(ModItems.OBSERVANT_PICKAXE);
+                        entries.add(ModItems.OBSERVANT_AXE);
+
+                    })).build());
+
+
+
     public static void registerItemGroups(){
         EnderMania.LOGGER.info("Register ItemGroup for " + EnderMania.MOD_ID);
     }

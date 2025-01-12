@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:stick"
+    },
+    "F": {
+      "item": "endermania:end_fiber"
+    },
+    "S": {
+      "item": "endermania:end_stone_shard"
+    }
+  },
+  "pattern": [
+    "FS",
+    "C "
+  ],
+  "result": {
+    "item": "endermania:observant_axe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "endermania:end_fiber"
+    }
+  },
+  "pattern": [
+    "  S",
+    " SS"
+  ],
+  "result": {
+    "item": "endermania:end_string"
+  },
+  "show_notification": true
+}
