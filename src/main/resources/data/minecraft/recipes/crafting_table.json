@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "table",
+  "key": {
+    "#": {
+      "tag": "endermania:planks"
+    },
+    "S": {
+
+    "item":"ednermania:end_fiber"},
+
+  "B": {
+    "item":"endermania:end_stone_shard"
+  }
+  },
+
+  "pattern": [
+    "#S",
+    "B "
+  ],
+  "result": {
+    "item": "minecraft:crafting_table"
+  },
+  "show_notification": true
+}

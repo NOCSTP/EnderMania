@@ -41,5 +41,7 @@ public class LootTableReplayser {
             // Если идентификатор не совпадает, возвращаем оригинальную таблицу
             return original;
         });
+
+
     }
 }
